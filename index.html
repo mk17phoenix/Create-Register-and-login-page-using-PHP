@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="registration_form">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-5 m-auto">
+                <div class="card mt-5">
+                    <div class="card-title">
+                        <h2 class="text-center text-primary">Registration Here</h2>
+                        <hr>
+                    </div>
+                <div class="card-body">
+                <form action="register.php" method="POST">
+                    <label>Name : </label>
+                        <input placeholder="Full Name" class="form-control mb-2" type="text" name="uname1" required>
+                    <br>
+                    <label>Mobile no : </label>
+                        <input placeholder="Mobile no" class="form-control mb-2" type="text" name="mobile"required>
+                    <br>
+                    <label>Gender : </label>
+                        <input type="radio" name="gen" value="male" id="">male
+                        <input type="radio" name="gen" value="female" id="">female
+                        <input type="radio" name="gen" value="other" id="">other
+                    <br>
+                    <label>Role : </label>
+                        <select class="form-control mb-2" name="role" required>
+                            <option value="">--option--</option>
+                            <option value="admin">admin</option>
+                            <option value="user">user</option>
+                        </select>
+                    <br>
+                    <label>Skills : </label>
+                        <input type="checkbox" name="skill[]" value="php">php
+                        <input type="checkbox" name="skill[]" value="mysql">mysql
+                        <input type="checkbox" name="skill[]" value="javascript">javascript
+                    <br>
+                    <label>Email id : </label>
+                        <input placeholder="Email ID" class="form-control mb-2" type="email" name="email_id" required>
+                    <br>
+                    <label>Password : </label>
+                        <input placeholder="Password" class="form-control mb-2" type="password" name="password" required>
+                    <br>
+                    <label>DOB : </label>
+                        <input  class="form-control mb-2" type="date" name="dob" required>
+                    <br>
+                    <center><input class="btn btn-success round " type="submit" value="register" name="submit"></center>
+                        <a href="login.html" class="text-danger">Already have a account? please login here</a>
+                </form>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
